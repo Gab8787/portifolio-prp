@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: principal;
+    src: url(/elementos/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+    font-family: title;
+    src: url(/elementos/boxigen.otf);
+}
+
+html,body{
+    background-color: black;
+}
+
+#topo{
+    display: flex;
+
+}
+#topo > img{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;}
+
+#topo > P{
+    color: white;
+    width: 60%;
+    font-size: 1.6em;
+    margin: 2em;
+    font-family: title;
+    line-height: 40px;
+}
+p{
+    margin: 10px;
+    line-height: 30px;
+    font-size: 1.3em;
+    color: rgb(199, 199, 199);
+    font-family: title;
+}
+#habilidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 10px;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 7px;
+    transition: 1s;
+}
+.card:hover{
+    transition: 1s;
+    transform: scale(1.05);
+    background-color: rgb(118, 116, 116);
+}
+
+h1{
+    font-family: title;
+    text-align: center;
+    margin: 50px;
+    color: white;
+    font-size: 5em;
+}
+
+img.icon{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+#projetos{
+    display: flex;
+    justify-content: space-around;
+}
+img.foto{
+    margin: 7px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+div.pr{
+    border-radius: 10px;
+    background-color: grey;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+div.pr:hover{
+    transition: 1s;
+    background-color: rgb(199, 194, 194);
+    transform: scale(1.05);
+}
+@media screen and (max-width: 700px){
+        #topo img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            
+        }
+#topo p{
+    line-height: 20px;
+}
+#topo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.7em;
+}
+h1{
+    font-size: 2em;
+}
+div#projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img.foto{
+    
+    width: 250px;
+}
+}
