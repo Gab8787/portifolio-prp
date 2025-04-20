@@ -5,11 +5,11 @@
 }
 @font-face {
     font-family: principal;
-    src: url(/elementos/TitilliumWeb-Regular.ttf);
+    src: url(./elementos/TitilliumWeb-Regular.ttf);
 }
 @font-face {
     font-family: title;
-    src: url(/elementos/boxigen.otf);
+    src: url(./elementos/boxigen.otf);
 }
 
 html,body{
